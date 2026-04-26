@@ -43,3 +43,11 @@ Stdlib only, no `pip install` needed.
 ## Caveat - upstream packaging
 
 The release-asset filenames on `kcat/openal-soft` and `kcat/dsoal` aren't stable. They've already shifted once each during the time I've been using this: `openal-soft-1.25.1-bin.zip` → `OpenALSoft+HRTF.zip`, and a flat `DSOAL.zip` → an outer wrapper around `DSOAL_rNNN.zip` where the build number changes every CI run. The script handles both layouts, but if either project changes packaging again the lambdas in `main()` will need tweaking.
+
+---
+
+## Credits & Acknowledgments
+
+Credits to the authors of the software referenced:
+* **[kcat (Chris Robinson)](https://github.com/kcat)** - For the tireless work on **OpenAL Soft** and **DSOAL**. Without these projects, 3D audio in legacy PC games would be effectively dead on modern systems.
+* **SADIE** - For the [SADIE KU100 HRTF dataset](https://www.york.ac.uk/c2pe/resources/sadie-database/ku100-hrtf-database/), widely considered one of the best general-purpose profiles for headphone spatialization.

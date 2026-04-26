@@ -1,3 +1,12 @@
+# Restore the "True" Sound of Classic PC Games
+
+If you are playing a game from the DirectSound era (late '90s to mid-2000s) on modern Windows, **it probably sounds flat and lifeless.** Ever since Windows Vista, Microsoft stripped out the hardware audio layer these games relied on. This means legendary titles are forced into a generic "flat" stereo mode, missing the precise 3D positioning and immersive environmental echoes (EAX) that made them sound amazing back in the day.
+
+**This tool is a "one-and-done" fix that restores:**
+* **Full EAX Support:** Re-enables all hardware-accelerated effects (reverb, occlusion, and echoes).
+* **True 3D Spatial Audio:** Uses modern HRTF to let you hear exactly where a sound is coming from (optimized for headphones).
+* **Original Sound Quality:** Bypasses modern Windows limitations to bring back the intended audio engine of the 2000s.
+
 # deploy_hrtf
 
 Sets up DSOAL + OpenAL Soft + SADIE KU100 HRTF for legacy DirectSound games on Windows - DS3D, EAX 1 through 4, anything that goes through `dsound.dll`. NFS Undercover is what I wrote it for, but it works on the rest of that era.
